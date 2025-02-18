@@ -47,7 +47,7 @@ function App() {
                     <Package size={24} />
                     <span>Produtos</span>
                   </Link>
-                  
+
                   <div className="flex space-x-4">
                     <Link to="/dashboard" className="flex items-center space-x-1 hover:text-purple-200 transition">
                       <LayoutGrid size={20} />

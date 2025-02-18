@@ -8,7 +8,7 @@ export default function ProductList() {
   const [products] = useState(getProducts());
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState('');
-  const productsPerPage = 10;
+  const productsPerPage = 9;
 
   const filteredProducts = products.filter(product =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
