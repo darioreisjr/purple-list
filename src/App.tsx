@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import ProductForm from './components/ProductForm';
@@ -8,7 +7,7 @@ import CategoryManagement from './components/CategoryManagement';
 import ProductDetails from './components/ProductDetails';
 import ThemeToggle from './components/ThemeToggle';
 import { ThemeProvider } from './contexts/ThemeContext';
-import { LayoutGrid, Package, PlusCircle, Tags } from 'lucide-react';
+import { LayoutGrid, PlusCircle, Tags } from 'lucide-react';
 
 function App() {
   return (
@@ -44,8 +43,8 @@ function App() {
               <div className="flex items-center justify-between h-16">
                 <div className="flex items-center space-x-8">
                   <Link to="/" className="flex items-center space-x-2 font-bold text-xl">
-                    <Package size={24} />
-                    <span>Produtos</span>
+                    <img src="/public/logo.ico" alt="logo Purple List" width={40} height={40} />
+                    <span>Purple List</span>
                   </Link>
 
                   <div className="flex space-x-4">
