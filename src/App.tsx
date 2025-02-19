@@ -9,6 +9,8 @@ import ThemeToggle from './components/ThemeToggle';
 import { ThemeProvider } from './contexts/ThemeContext';
 import { LayoutGrid, PlusCircle, Tags } from 'lucide-react';
 
+import logo from '../public/logo.ico';
+
 function App() {
   return (
     <ThemeProvider>
@@ -43,7 +45,7 @@ function App() {
               <div className="flex items-center justify-between h-16">
                 <div className="flex items-center space-x-8">
                   <Link to="/" className="flex items-center space-x-2 font-bold text-xl">
-                    <img src="/public/logo.ico" alt="logo Purple List" width={40} height={40} />
+                    <img src={logo} alt="logo Purple List" width={40} height={40} />
                     <span>Purple List</span>
                   </Link>
 
