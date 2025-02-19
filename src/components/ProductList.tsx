@@ -4,6 +4,9 @@ import { getProducts } from '../utils/storage';
 import { formatToBRL } from '../utils/format';
 import { Search } from 'lucide-react';
 
+import nameLogo from '../../public/namePurpleList.ico';
+import logo from '../../public/logo.ico';
+
 export default function ProductList() {
   const [products] = useState(getProducts());
   const [currentPage, setCurrentPage] = useState(1);
@@ -24,7 +27,10 @@ export default function ProductList() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-purple-800 dark:text-purple-400 mb-8">Nossos Produtos</h1>
+        <div className='flex justify-center gap-8 align-center mb-8 '>
+          <img src={logo} alt="logo com nome Purple List" width={100} />
+          <img src={nameLogo} alt="logo com nome Purple List" />
+        </div>
 
         {/* Search Bar */}
         <div className="mb-6">
